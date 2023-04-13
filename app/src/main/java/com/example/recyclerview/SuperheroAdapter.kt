@@ -24,6 +24,9 @@ class SuperheroAdapter (private val context: Context, private val superhero: Lis
             nameSuperhero.text = superhero.nameSuperhero
             descSuperhero.text = superhero.descSuperhero
             ratingSuperhero.text = superhero.ratingSuperhero
+            itemView.setOnClickListener {
+                listener(superhero)
+            }
         }
 
     }
